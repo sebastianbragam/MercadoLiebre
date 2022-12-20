@@ -18,7 +18,11 @@ p {
 }
 
 div.top-header {
-    padding: 5%;
+    padding: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header {
@@ -27,13 +31,32 @@ header {
 
 header div.logo {
     width: 50%;
-}
-
-header div.logo {
     padding: 10px;
 }
+
+header div.form {
+    width: 50%;
+    padding: 10px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+header .submit {
+    text-align: center;
+}
+
+header div.top-header p {
+    text-align: center;
+    margin-top: 10px;
+}
+
 header nav {
     font-size: 12px;
+}
+
+header nav.navbar {
+    display: none;
 }
 
 header ul li {
@@ -60,13 +83,7 @@ header .form .submit {
     width: 10%;
 }
 
-header div.top-header p {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.navbar {
+header.navbar {
     display: none;
 }
 
@@ -83,21 +100,38 @@ div.burger-menu i {
     padding: 10px;
 }
 
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 article div.main-article {
     width: 100%;
     border-top: 1px solid #ebebeb;
     padding: 10px;
     margin: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
 .price {
     font-size: 18px;
+    width: 50%;
+    padding: 1%;
+}
+
+.discount {
+    width: 50%;
+    padding: 1%;
 }
 
 .discount,
 .description { 
     font-size: 16px;
     font-weight: normal;
+    padding: 1%;
 }
 
 h3,
@@ -132,30 +166,77 @@ main section article i,
     color: #39b54a;
 }
 
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
 .announcements {
     padding: 20px;
 }
 
-.announcement {
+footer div.announcement {
     text-align: center;
     margin: 20px 0px;
 }
 
-.title-announcement {
+footer p.title-announcement {
     font-size: 16px;
     font-weight: bold;
+    margin: 5px 0px;
 }
 
-.icon-announcement {
+footer div.icon-announcement {
     font-size: 2em;
     padding-bottom: 10px;
     color: #0044AA;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 480px) {
 
-    .navbar {
-        display: block;
+    header nav.navbar {
+        display: flex;
+        padding: 10px;
+        margin: 0px 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    header ul.left-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header ul.right-menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header li {
+        margin: 10px;
+    }
+
+    header div.logo {
+        width: 30%;
+        padding: 10px;
+    }
+    
+    header div.form {
+        width: 30%;
+        padding: 10px;
+    }
+
+    header p.announcement {
+        width: 30%;
         padding: 10px;
     }
 
@@ -167,28 +248,29 @@ main section article i,
         display: block;
     }
 
+    .products {
+        justify-content: space-around;
+    }
+
     .products article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
     }
 
 }
 
 @media (min-width: 769px) {
-    
-    .navbar {
-        display: block;
+        
+    header div.form {
+        font-size: 16px;
     }
 
-    div.burger-menu {
-        display: none;
+    header p.announcement {
+        font-size: 16px;
     }
 
-    .description {
-        display: block;
-    }
-    
     .products article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 22.5%;
     }
 
 }
