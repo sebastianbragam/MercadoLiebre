@@ -47,7 +47,6 @@ header form.search-form {
     align-items: center;
     background-color: white;
     border-radius: 5px;
-
 }
 
 header form input.search-input {
@@ -56,6 +55,10 @@ header form input.search-input {
     margin-right: 2%;
     background: none;
     border: none;
+}
+
+header form input.search-input:focus-visible {
+    outline: none;
 }
 
 header form button.search-button {
