@@ -299,10 +299,6 @@ footer div.icon-announcement:hover {
     color: #001e4b;
 }
 
-footer section.announcements {
-    display: flex;
-    flex-direction: row;
-}
 
 
 /* Register */
@@ -480,6 +476,14 @@ main form.login-form {
 
     .products article {
         width: 22.5%;
+    }
+
+
+    /* Footer */
+    
+    footer section.announcements {
+        display: flex;
+        flex-direction: row;
     }
 
 }
