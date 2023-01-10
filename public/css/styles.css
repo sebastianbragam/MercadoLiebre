@@ -303,8 +303,17 @@ footer div.icon-announcement:hover {
 
 /* Register */
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+}
+
 main div.register-section {
     margin: 10px 0px;
+    max-width: 650px;
+    width: 100%;
 }
 
 main form.register-form {
@@ -370,7 +379,10 @@ main button.reset-button {
 
 main div.login-section {
     margin: 10px 0px;
+    max-width: 650px;
+    width: 100%;
 }
+
 
 main form.login-form {
     display: flex;
